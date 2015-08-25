@@ -11,7 +11,7 @@ class App < Sinatra::Base
     # first we need to instantiate a new instance of our GetTweets class
     connection = GetTweets.new("flatironschool")
 
-    # we're calling the get_search_results method on that instance and assigning it to an instance variable. 
+    # we're calling the get_search_results method on that instance and assigning it to an instance variable.
     @tweets = connection.get_search_results
 
     # this instance variable can then be passed to our ERB template in views
